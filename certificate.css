@@ -1,0 +1,58 @@
+.make{
+  margin-bottom:0px;
+  color:black;
+}
+
+
+
+i{
+  margin-right:10px;
+}
+li{
+  text-align:center;
+  margin-left:5px;
+  margin-right:5px;
+  width:130px;
+  height:40px;
+  }
+.nav-head h1{
+  color:black;
+}
+#as{
+  color:black;
+}
+  #as:hover{
+    background-color:grey;
+   }
+   @media only screen and (max-width:991px){
+    li{
+      text-align:center;
+      margin-left:5px;
+      margin-right:5px;
+      width:100%;
+      height:40px;
+      }
+
+   }  
+
+
+/*certificate*/
+.outer-border{
+  margin-top:20px;
+padding:20px;
+
+}
+.inner-border{
+  padding:10px;
+
+}
+
+@media only screen and (max-width:505px){
+  .certificate {
+    font-size: 5px;
+  }
+
+}
+
+
+

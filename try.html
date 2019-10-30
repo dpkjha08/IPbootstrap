@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            toggle save
+        </title>
+        <style>
+        .content {
+    display: none;
+}
+
+    .content_visible {
+        display: block;
+    }
+        </style>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+        <script>
+        var $content = $('.js-content');
+
+if (localStorage.getItem('isVisible') === 'true') {
+    $content.addClass('content_visible');
+}
+
+$('.js-button').on('click', function() {
+    $content.toggleClass('content_visible');
+    localStorage.setItem('isVisible', $content.hasClass('content_visible'));
+});
+        </script>
+    </head>
+    <body>
+        <button type="button" class="js-button">+</button>
+<div class="content js-content">This is content</div>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+/*navbar*/
+.make{
+  margin-bottom:0px;
+  color:black;
+}
+
+
+
+i{
+  margin-right:10px;
+}
+li{
+  text-align:center;
+  margin-left:5px;
+  margin-right:5px;
+  width:130px;
+  height:40px;
+  }
+.nav-head h1{
+  color:black;
+}
+#as{
+  color:black;
+}
+  .info a:hover{
+    background-color:grey;
+   }
+   @media only screen and (max-width:991px){
+    li{
+      text-align:center;
+      margin-left:5px;
+      margin-right:5px;
+      width:100%;
+      height:40px;
+      }
+
+   }
+    
+/*toggler*/
+
+
+.toggle
+{position: relative;
+  background: none;
+  border: 2px solid black;
+  width: 49px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.toggle.active
+{
+  background:none;
+  border: 2px solid white;
+}
+.toggle:before
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background:black;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.toggle.active:before
+{
+  left: 27px;
+  background: white;
+}
+
+/*dark*/
+body.night .first_row{
+  background-color: white;
+}
+
+body.night .info a:hover{
+  background-color:gray;
+}
+
+body.night .nav-head h1
+{
+  color:whitesmoke;
+
+}
+
+/*switch dark/light*/
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*switch end*/

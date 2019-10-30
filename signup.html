@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SIGN UP</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+  <script>
+        function register_validation(){
+            var password = document.getElementById("password").value;
+            var confirm_password = document.getElementById("confirm_password").value;
+            if(password==confirm_password){
+                document.getElementById("form_register").action="signup.php"
+            }
+            else{
+                alert("password mismatch")
+                document.getElementById("form_register").action="signup.html"
+
+            }
+            
+        }
+
+        </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('night')
+        })
+    })
+</script>
+</head>
+<body>
+    <div class=" content">
+        <div class="container-fluid">
+        
+    <div class="make">
+    <nav class="navbar navbar-expand-lg  navbar-dark ">
+      <a class="navbar-brand nav-head" href="#"><h1>Learn2code.com</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end make2" id="collapsibleNavbar">
+        <ul class="navbar-nav nav-pills info" >
+          <li class="nav-item about ">
+            <a class="nav-link active " href="#"><i class="fas fa-home"></i>HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="far fa-address-card"></i>ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-phone-alt"></i>CONTACT</a>
+          </li> 
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-sign-out-alt"></i>LOGOUT</a>
+            </li>  
+          
+            <li class="nav-item "style="width:49px;"><div class=" mt-2 p-2 toggle" ></div></li>
+        </ul>
+      </div>  
+    </nav>
+    </div>
+    
+    
+               
+    
+    </div>
+    </div>
+
+    <!--signupform and image-->
+    <div class="container-fluid">
+        <div class="row first_row" style="height:1px;">
+
+          </div>
+           <div class="row">
+              
+            <!--  <div class="col-lg-8 col-md-6 col-sm-0 col-xs-0 bg-primary ">
+                f3x4gc
+              </div>-->
+              <div class="col-lg-12 ch">
+                <form id="form_register" method="post" action="">
+                <div class="row">
+                  <div class="col-lg-12 d-flex justify-content-center welcome">Hey Alien :)</div>
+                  <div class="col-lg-12 d-flex justify-content-center login"><h2>SIGN UP HERE</h2></div>
+            
+                      <div class="col-lg-12 d-flex justify-content-center first">
+                          <div class="first">
+                    <input type="text" name="first" id="first" placeholder="First Name" required>
+                    </div>
+                    <div class="last">
+                    <input type="text" name="last" id="last" placeholder="Last Name" required>
+                    </div>
+                     </div>
+                      
+        
+                  
+                  <div class="col-lg-12  d-flex justify-content-center  username">
+                    <input type="email" name="username" id="username" placeholder="Email" required>
+                  </div>
+                  <div class="col-lg-12 d-flex justify-content-center password">
+                      <input type="password" name="password" id="password" placeholder="Password" required>
+                    </div>
+                    <div class="col-lg-12 p-4 d-flex justify-content-center con-password">
+                            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password" required>
+                          </div>
+                    <div class="col-lg-12 d-flex justify-content-center login-button">
+                        <button class="btn btn-info bg-primary btn-login" onclick="register_validation()">SIGN UP</button>
+                      </div>
+
+              </form>
+                  
+  
+  
+                </div>
+                </div>
+                
+              </div>
+            </div>
+    
+              
+              </div>
+            </div>
+            </div>
+
+ 
+    
+
+
+
+
+
+</body>
+</html>

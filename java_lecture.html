@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVA LECTURE</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="lecture_python.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+
+        <script type="text/javascript">
+          window.onload=mode_check;
+                function mode_check(){
+                    var mode= localStorage.getItem("mode");
+                    if (mode=="1"){
+                    document.getElementById("checktog").checked=true;
+                                
+                    comp();
+      
+      
+                }
+                else{
+                  document.getElementById("checktog").checked=false;
+                  
+                  comp();
+      
+      
+                }
+                }
+              function comp(){
+      
+                  if (document.getElementById("checktog").checked==true){
+                    
+                      document.getElementById("as1").style.color="white";
+                      document.getElementById("as2").style.color="white";
+                      document.getElementById("as4").style.color="white";
+                      document.getElementById("as3").style.color="white";
+                      document.getElementById("label1").style.color="white";
+                      document.getElementById("label2").style.color="white";
+                      document.getElementById("label3").style.color="white";
+                      document.getElementById("course").style.color="white"; 
+                      document.getElementById("first_row1").style.backgroundColor="white"; 
+                      document.getElementById("first_row2").style.backgroundColor="white";
+                      document.body.style.backgroundImage='url("log6.jpg")';                
+                      localStorage.setItem("mode","1");
+                  }
+                  
+                  else{
+                    document.body.style.backgroundImage='url("logo5.jpg")'; 
+                    document.getElementById("as1").style.color="black";
+                    document.getElementById("as2").style.color="black";
+                    document.getElementById("as3").style.color="black";
+                    document.getElementById("as4").style.color="black";
+                    document.getElementById("label1").style.color="black";
+                    document.getElementById("label2").style.color="black";
+                    document.getElementById("label3").style.color="black";
+                    document.getElementById("course").style.color="black"; 
+                    document.getElementById("first_row1").style.backgroundColor="black"; 
+                    document.getElementById("first_row2").style.backgroundColor="black";               
+                    localStorage.setItem("mode","0");
+                  }
+                
+                  
+              }
+        </script>
+    </head>
+    <body>
+        <!--navbar-->
+        <div class=" content">
+            <div class="container-fluid">
+            
+        <div class="make">
+        <nav class="navbar navbar-expand-lg  navbar-dark ">
+          <a class="navbar-brand nav-head" href="#"><h1 id="label1">Learn2code.com</h1></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end make2" id="collapsibleNavbar">
+            <ul class="navbar-nav nav-pills info" >
+              <li class="nav-item about ">
+                <a class="nav-link" id="as1" href="qwerty.html"><i class="fas fa-home"></i>HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="as2"><i class="far fa-address-card"></i>ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="as3"><i class="fas fa-phone-alt"></i>CONTACT</a>
+              </li> 
+              <li class="nav-item">
+                  <a class="nav-link" href="#" id="as4"><i class="fas fa-sign-out-alt"></i>LOGOUT</a>
+                </li>  
+              
+                <li class="nav-item "style="width:49px;"><label class="switch">
+                  <input id="checktog" type="checkbox" onclick="comp()">
+                  <span class="slider round"></span>
+              </label>
+                
+              </li>
+            </ul>
+          </div>  
+        </nav>
+        </div>
+        
+        
+                   
+        
+        </div>
+        </div>
+
+
+            <!--python-->
+    
+
+            
+        <div class="container-fluid cont">
+            <div class="row first_row" id="first_row1" style="height:1px; ">
+
+              </div>
+            <div class="row">
+                <div class="col-lg-12 p-3 d-flex justify-content-center nav-head"  >
+                    <h2 id="course">
+                            JAVA 
+                    </h2>
+                </div>
+            </div>
+            <div class="row first_row" id="first_row2" style="height:1px;">
+
+              </div>
+
+            <div class="row">
+                <div class="col-lg-7">
+
+                    <div class="row m-1 p-2 d-flex justify-content-center nav-head">
+                            <h4 >
+                                <i id="label2">
+                                    What will you learn??
+                                </i>
+                            </h4>
+                        
+                    </div>
+
+                    <div class="row p-4 d-flex justify-content-center nav-head">
+                                <i id="label3">
+                                        Lorem Ipsum is simply dummy text of th
+                                        e printing and typesetting industry. Lorem Ipsum h
+                                        as been the industry's standard dummy text ever si
+                                        nce the 1500s, when an unknown printer took a gall 
+                                        ey of type and scrambled it to make a type speci
+                                        men book. It has survived not only five centuries, 
+                                        but also the leap into electronic typesetting, remaining 
+                                        essentially unchanged. It was popularised in the 1960s with
+                                         the release of Letraset sheets containing Lorem Ipsum passages, 
+                                         and more recently with desktop publ
+                                        ishing software like Aldus PageMaker including ver
+                                        sions of Lorem Ipsum.
+                                        It is a long established fact that a reader 
+                                        will be distracted by the readable content of a
+                                         page when looking at its layout. The point of using 
+                                         Lorem Ipsum is that it has a more-or-less normal distribution
+                                          of letters, as opposed to using 'Content here, content here',
+                                           making it look like readable English. Many desktop publishing
+                                            packages and web page editors now use Lorem Ipsum as their default
+                                             model text, and a search for 'lorem ipsum' will uncover many web 
+                                             sites still in their infancy. Various versions have evolved over 
+                                             the years, sometimes by accident, sometimes on purpose (injected 
+                                             humour and the like).
+                                </i>
+                        
+                    </div>
+                </div>
+                
+
+
+                <div class="col-lg-5 col-sm-12 p-5 d-flex justify-content-center">
+                        <iframe style="border-radius:10px;box-shadow:0 10px 10px black;" width="500" height="350"
+                        src="https://www.youtube.com/embed/grEKMHGYyns" allowfullscreen>
+                        </iframe>
+                </div>
+            </div>
+
+            <div class="row  p-2 d-flex justify-content-center ">
+                <div class="btntest ">
+                        <button class="btn btn-info bg-primary btn-login btn-signup"><a style="text-decoration:none; color:white;" href="check1_java.php">Completed your Python Course? Get your course completion certificate</a></button>
+                    
+                </div>
+
+            </div>
+            
+            
+
+
+
+        </div>
+
+           </body>
+           

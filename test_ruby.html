@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PYTHON TEST</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home_copy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script type="text/javascript">
+    window.onload=mode_check;
+          function mode_check(){
+              var mode= localStorage.getItem("mode");
+              if (mode=="1"){
+              document.getElementById("checktog").checked=true;
+                          
+              comp();
+
+
+          }
+          else{
+            document.getElementById("checktog").checked=false;
+            
+            comp();
+
+
+          }
+          }
+        function comp(){
+
+            if (document.getElementById("checktog").checked==true){
+              
+              document.body.style.backgroundSize="100% 100%";
+              document.body.style.backgroundImage="url('log6.jpg')"
+                document.getElementById("as1").style.color="white";
+                document.getElementById("as2").style.color="white";
+                document.getElementById("as4").style.color="white";
+                document.getElementById("as3").style.color="white";
+                document.getElementById("label").style.color="white";
+                document.getElementById("label1").style.color="white";
+                document.getElementById("label2").style.color="white";
+                document.getElementById("label3").style.color="white";
+                document.getElementById("label4").style.color="white";
+                document.getElementById("label5").style.color="white";
+                document.getElementById("first_row").style.backgroundColor="white";                                
+                localStorage.setItem("mode","1");
+            }
+            else{
+
+              
+              document.getElementById("as1").style.color="black";
+              document.getElementById("as2").style.color="black";
+              document.getElementById("as3").style.color="black";
+              document.getElementById("as4").style.color="black";
+              document.getElementById("label").style.color="black";
+              document.getElementById("label1").style.color="black";
+              document.getElementById("label2").style.color="black";
+              document.getElementById("label3").style.color="black";
+              document.getElementById("label4").style.color="black";
+              document.getElementById("label5").style.color="black";
+              document.getElementById("first_row").style.backgroundColor="black";                              
+              document.body.style.backgroundImage="url('logo5.jpg')"                           
+              localStorage.setItem("mode","0");
+            }
+          
+            
+        }
+  </script>
+<script>
+function goto_php(){
+  var fq = document.getElementsByName("f1");
+  var sq = document.getElementsByName("f2");
+  var tq = document.getElementsByName("f3");
+  var foq = document.getElementsByName("f4");
+  var fiq = document.getElementsByName("f5");
+  var first_question=document.getElementById("f1").value;
+  var first=0;
+  var second=0;
+  var third=0;
+  var fourth=0;
+  var fifth=0;
+
+  for (var i = 0, len = fq.length; i < len; i++) {
+     if (fq[i].checked) {
+      first=1;
+            }
+    }
+
+    for (var i = 0, len = sq.length; i < len; i++) {
+     if (sq[i].checked) {
+      second=1;
+            }
+    }
+
+    for (var i = 0, len = tq.length; i < len; i++) {
+     if (tq[i].checked) {
+      third=1;
+            }
+    }
+
+    for (var i = 0, len = foq.length; i < len; i++) {
+     if (foq[i].checked) {
+      fourth=1;
+            }
+    }
+
+    for (var i = 0, len = fiq.length; i < len; i++) {
+     if (fiq[i].checked) {
+      fifth=1;
+            }
+    }
+
+if (first==0){
+  alert("Please check 1st question");
+
+ }
+else if (second==0){
+  alert("Please check 2nd question");
+ }
+ else if (third==0){
+  alert("Please check 3rd question");
+ }
+ else if (fourth==0){
+  alert("Please check 4th question");
+ }
+ else if (fifth==0){
+  alert("Please check 5th question");
+ }
+ else{
+   main_goto();
+ }
+}
+
+function main_goto(){
+  document.getElementById("python_test").action="test_ruby.php";
+}
+</script>
+
+
+</head>
+
+<body>
+
+
+<!--navbar-->
+<div class=" content">
+    <div class="container-fluid make2 " id="make2">
+    
+<div class="make ">
+<nav class="navbar navbar-expand-lg  navbar-dark ">
+  <a class="navbar-brand nav-head" href="#" ><h1 id="label">Learn2code.com</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end make2" id="collapsibleNavbar">
+    <ul class="navbar-nav nav-pills info" >
+      <li class="nav-item about ">
+        <a class="nav-link" id="as1" href="qwerty.html"><i class="fas fa-home"></i>HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="as2" href="#"><i class="far fa-address-card"></i>ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="as3" href="#"><i class="fas fa-phone-alt"></i>CONTACT</a>
+      </li> 
+      <li class="nav-item">
+          <a class="nav-link" id="as4" href="login_out.php"><i class="fas fa-sign-out-alt"></i>LOGOUT</a>
+        </li>  
+      
+        <li class="nav-item "style="width:49px;"><label class="switch">
+            <input id="checktog" type="checkbox" onclick="comp()">
+            <span class="slider round"></span>
+        </label>
+          
+        </li>
+    </ul>
+  </div>  
+</nav>
+</div>
+
+
+           
+
+</div>
+</div>
+<!--question-->
+<div class="container-fluid">
+    <div class="row first_row" id="first_row" style="height:1px;">
+
+      </div>
+      <form action="" method="post" id="python_test">
+        <!--first question-->
+        <div class="row mt-1">
+          <div class="col-lg-12 d-flex flex-column justify-content-center">
+            <div class="row ml-2">
+                <h4 id="label1">
+                    1.Select the reserved keyword in python:
+
+            </div>
+        <div class="row m-1 ans ">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  p-2 d-flex justify-content-left" style="background-color:#ccd0d7; border-radius: 5px;">
+              <input style="width:25px; height:20px;" type="radio" name="f1" id="f1" value="1">
+            <h6>else</h6>
+          </div>
+        </div>
+        <div class="row m-1">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                <input style="width:25px; height:20px;" type="radio" name="f1"id="f1" value="2">
+           
+              <h6>import</h6>
+            </div>
+          </div>
+          <div class="row m-1">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                  <input style="width:25px; height:20px;" type="radio" name="f1" id="f1" value="3">
+                <h6>raise</h6>
+              </div>
+            </div>
+            <div class="row m-1">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left " style="background-color:#ccd0d7;border-radius: 5px;">
+                    <input style="width:25px; height:20px;" type="radio" name="f1" id="f1" value="4">
+                
+                  <h6>All of the above</h6>
+                </div>
+              </div>
+          </div>
+        </div>
+
+        <!--second question-->
+
+        <div class="mt-1 row">
+            <div class="col-lg-12 d-flex flex-column justify-content-center">
+              <div class="row ml-2">
+                  <h4 id="label2">
+                     2.Select the reserved keyword in python:
+
+              </div>
+              <div class="row m-1 ans ">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                    <input style="width:25px; height:20px;" type="radio" name="f2" id="f2" value="1">
+                  <h6>else</h6>
+                </div>
+              </div>
+              <div class="row m-1">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                      <input style="width:25px; height:20px;" type="radio" name="f2"id="f2" value="2">
+                 
+                    <h6>import</h6>
+                  </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                        <input style="width:25px; height:20px;" type="radio" name="f2" id="f2" value="3">
+                      <h6>raise</h6>
+                    </div>
+                  </div>
+                  <div class="row m-1">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left  " style="background-color:#ccd0d7;border-radius: 5px; ">
+                          <input style="width:25px; height:20px;" type="radio" name="f2" id="f2" value="4">
+                      
+                        <h6>All of the above</h6>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        
+          <!--third-->
+          <div class="mt-1 row">
+              <div class="col-lg-12  d-flex flex-column justify-content-center">
+                <div class="row ml-2">
+                    <h4 id="label3">
+                        3.Select the reserved keyword in python:
+
+                </div>
+                <div class="row m-1 ans ">
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  p-2  d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px;">
+                      <input style="width:25px; height:20px;" type="radio" name="f3" id="f3" value="1">
+                    <h6>else</h6>
+                  </div>
+                </div>
+                <div class="row m-1">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                        <input style="width:25px; height:20px;" type="radio" name="f3"id="f3" value="2">
+                   
+                      <h6>import</h6>
+                    </div>
+                  </div>
+                  <div class="row m-1">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                          <input style="width:25px; height:20px;" type="radio" name="f3" id="f3" value="3">
+                        <h6>raise</h6>
+                      </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left  " style="background-color:#ccd0d7;border-radius: 5px; ">
+                            <input style="width:25px; height:20px;" type="radio" name="f3" id="f3" value="4">
+                        
+                          <h6>All of the above</h6>
+                        </div>
+                      </div>
+              </div>
+            </div>
+
+            <!--fourth-->
+            <div class="mt-1 row">
+                <div class="col-lg-12  d-flex flex-column justify-content-center">
+                  <div class="row ml-2">
+                      <h4 id="label4">
+                          4.Select the reserved keyword in python:
+
+                  </div>
+                  <div class="row m-1 ans ">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                        <input style="width:25px; height:20px;" type="radio" name="f4" id="f4" value="1">
+                      <h6>else</h6>
+                    </div>
+                  </div>
+                  <div class="row m-1">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2  d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                          <input style="width:25px; height:20px;" type="radio" name="f4"id="f4" value="2">
+                     
+                        <h6>import</h6>
+                      </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                            <input style="width:25px; height:20px;" type="radio" name="f4" id="f4" value="3">
+                          <h6>raise</h6>
+                        </div>
+                      </div>
+                      <div class="row m-1">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 d-flex justify-content-left  " style="background-color:#ccd0d7;border-radius: 5px; ">
+                              <input style="width:25px; height:20px;" type="radio" name="f4" id="f4" value="4">
+                          
+                            <h6>All of the above</h6>
+                          </div>
+                        </div>
+                </div>
+              </div>
+
+              <!--fifth-->
+              <div class="mt-1 row">
+                  <div class="col-lg-12 d-flex flex-column justify-content-center">
+                    <div class="row ml-2">
+                        <h4 id="label5">
+                            5.Select the reserved keyword in python:
+
+                    </div>
+                    <div class="row m-1 ans ">
+                      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                          <input style="width:25px; height:20px;" type="radio" name="f5" id="f5" value="1">
+                        <h6>else</h6>
+                      </div>
+                    </div>
+                    <div class="row m-1">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                            <input style="width:25px; height:20px;" type="radio" name="f5"id="f5" value="2">
+                       
+                          <h6>import</h6>
+                        </div>
+                      </div>
+                      <div class="row m-1">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 d-flex justify-content-left" style="background-color:#ccd0d7;border-radius: 5px; ">
+                              <input style="width:25px; height:20px;" type="radio" name="f5" id="f5" value="3">
+                            <h6>raise</h6>
+                          </div>
+                        </div>
+                        <div class="row m-1">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 p-2 d-flex justify-content-left  " style="background-color:#ccd0d7;border-radius: 5px; ">
+                                <input style="width:25px; height:20px;" type="radio" name="f5" id="f5" value="4">
+                            
+                              <h6>All of the above</h6>
+                            </div>
+                          </div>
+                  </div>
+                </div>
+       
+        <div class="row d-flex justify-content-center mb-2 mt-2">
+          <button class="btn btn-info bg-primary btn-login btnsignup" onclick="goto_php()">SUBMIT</button>
+          
+
+        </div>
+        </form>
+
+
+      </div>
+</body>
+</html>

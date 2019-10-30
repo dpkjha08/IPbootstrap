@@ -1,0 +1,312 @@
+/*navbar*/
+.make{
+    margin-bottom:0px;
+    color:black;
+  }
+  
+  
+  
+  i{
+    margin-right:10px;
+  }
+  li{
+    text-align:center;
+    margin-left:5px;
+    margin-right:5px;
+    width:130px;
+    height:40px;
+    }
+  .nav-head h1{
+    color:black;
+  }
+  #as{
+    color:black;
+  }
+    .info a:hover{
+      background-color:grey;
+     }
+     @media only screen and (max-width:991px){
+      li{
+        text-align:center;
+        margin-left:5px;
+        margin-right:5px;
+        width:100%;
+        height:40px;
+        }
+
+     }
+
+
+/* OUR COURSES*/
+.course{
+    display: flex;
+    flex-wrap: wrap;  
+  justify-content: center;
+  text-align: center;
+  color:black;
+  text-shadow: 1px 10px  5px gray;
+  font-family: 'Times New Roman';
+  
+}
+
+
+/*card*/
+.middle{
+  position: relative;
+  top:50%;
+  left:50%;
+    transform: translate(-50%,-50%);
+    border-radius:20px;
+    border:none;
+    outline:none;
+    background:transparent
+  }
+  .card{
+    cursor: pointer;
+    width: 300px;
+    height: 320px;
+    box-shadow: 1px 5px 7px black;
+ 
+    background:transparent;
+
+  }
+.first_row{
+  background-color:black;
+}
+
+
+ 
+  .front,.back{
+    width: 300px;
+    height: 320px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .6s linear;
+    text-align: center;
+    border-radius:20px;
+    background:transparent;
+
+
+  }
+  .front img{
+    padding:25px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .front i{
+    color:black;
+  }
+  
+  .front{
+    transform: perspective(600px) rotateY(0deg);
+
+
+  }
+  .back{
+    background: #f1f1f1;
+    transform: perspective(600px) rotateY(180deg);
+    padding:5px;
+  }
+  .back-content{
+    color: #2c3e50;
+    text-align: center;
+    width: 100%;
+  }
+  .sm{
+    margin: 20px 0;
+  }
+  .sm a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #2c3e50;
+    font-size: 18px;
+    transition: 0.4s;
+    border-radius: 50%
+  }
+  .sm a:hover{
+    background: #2c3e50;
+    color: white;
+  }
+  .card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  .card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+  }
+
+/*switch dark/light*/
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  /**/
+  @media only screen and (max-width:1290px){
+
+    .card{
+      cursor: pointer;
+      width: 230px;
+      height: 240px;
+      box-shadow: 0px 10px 10px black;
+    }
+    .front,.back{
+      width: 230px;
+      height: 240px;
+      border-radius:10px;
+      font-size:10px;
+  
+    }
+    .front img{
+      padding:10px;
+      width: 200px;
+      height: 200px;
+      
+    }
+
+    
+
+
+  }
+
+
+  @media only screen and (max-width:991px){
+
+    .card{
+      cursor: pointer;
+      width: 300px;
+      height: 320px;
+    }
+    .front img{
+      padding:25px;
+      width: 300px;
+      height: 310px;
+      
+    }
+.front,.back{
+  width: 300px;
+  height: 320px;
+  border-radius:10px;
+  font-size:15px;
+
+
+}
+  }
+
+/*toggler*/
+
+
+.toggle
+{position: relative;
+  background: none;
+  border: 2px solid black;
+  width: 49px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.toggle.active
+{
+  background:none;
+  border: 2px solid white;
+}
+.toggle:before
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background:black;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.toggle.active:before
+{
+  left: 27px;
+  background: white;
+}
+
+
+/*dark*/
+body.night .course,
+body.night .front i,
+
+body.night .nav-head h1
+{
+  color:whitesmoke;
+
+}
+
+body.night .first_row{
+  background-color: white;
+}
+
+body.night .info a:hover{
+  background-color:gray;
+}
+
+

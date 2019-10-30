@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+      function email_validate(){
+          var dob=document.frm.dob.value;
+          var eid=document.frm.mail.value;
+          var atpos=eid.indexOf("@");
+          var dotpos=eid.lastIndexOf(".");
+          if (atpos<1 || dotpos< atpos+2||dotpos+2 >= eid.length){
+              alert("Please enter valid email id");
+          }
+          if (dob<22){
+              alert("Age should be less than or equal to 22");
+          }
+      }
+  </script>
+  </head>
+  <body>
+    <h1 align="center">
+        Alumni Information 
+    </h1><br>
+    <form name="frm">
+        Name: <input type="text" name="name" required><br>
+        Address: <textarea name="address" id="" cols="30" rows="5"></textarea><br>
+        DOB: <input type="number" required name="dob"><br>
+        Email: <input type="text" name="mail"><br>
+        Enter Your Hobbies <br>
+        <input type="checkbox">Football <br>
+        <input type="checkbox">Cricket<br>
+        <input type="checkbox">Reading <br>
+        <input type="checkbox">Others <br>
+        Select Your Branch <br>
+        <input type="radio" name="branch">Computer Science <br>
+        <input type="radio" name="branch">Information Technology <br>
+        <input type="radio" name="branch">Electronics <br>
+        <input type="radio" name="branch">Others <br>
+
+<input type="submit" onclick="email_validate()">
+
+    </form> 
+
+  </body>
+  </html>

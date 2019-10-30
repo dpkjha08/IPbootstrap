@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Computer 2
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+        <style>
+        .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+        </style>
+        
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script>
+          window.onload=mode_check;
+          function mode_check(){
+              var mode= localStorage.getItem("mode");
+              if (mode=="1"){
+              document.getElementById("checktog").checked=true;
+              document.getElementById("pdg").innerHTML="dark mode 1";
+            
+              comp();
+
+
+
+
+          }
+          else{
+            document.getElementById("checktog").checked=false;
+            document.getElementById("pdg").innerHTML="dark mode 0";
+            
+            comp();
+
+
+          }
+          }
+          
+
+           function comp(){
+
+            if (document.getElementById("checktog").checked==true){
+                document.getElementById("pdg").innerHTML="dark";
+                document.getElementById("pdg").style.color="white";
+                document.body.style.background="#ef3456";
+                localStorage.setItem("mode","1");
+            }
+            else{
+              document.getElementById("pdg").innerHTML="light";
+              document.getElementById("pdg").style.color="black";
+              document.body.style.background="white";
+              localStorage.setItem("mode","0");
+              
+
+            }
+          
+            
+        }
+        </script>
+    </head>
+    <body>
+            <label class="switch">
+                    <input id="checktog" type="checkbox" onclick="comp()">
+                    <span class="slider round"></span>
+                  </label>
+                  <p id="pdg">
+
+                  </p>
+    </body>
+</html>

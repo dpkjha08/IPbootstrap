@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>HOME</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="home_copy.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+
+
+ 
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+ <script type="text/javascript">
+    window.onload=mode_check;
+          function mode_check(){
+              var mode= localStorage.getItem("mode");
+              if (mode=="1"){
+              document.getElementById("checktog").checked=true;
+                          
+              comp();
+
+
+          }
+          else{
+            document.getElementById("checktog").checked=false;
+            
+            comp();
+
+
+          }
+          }
+        function comp(){
+
+            if (document.getElementById("checktog").checked==true){
+              document.body.style.backgroundImage='url("log6.jpg")';
+                document.getElementById("font1").style.color="white";
+                document.getElementById("font2").style.color="white";
+                document.getElementById("font3").style.color="white";
+                document.getElementById("font4").style.color="white";
+                document.getElementById("as1").style.color="white";
+                document.getElementById("as2").style.color="white";
+                document.getElementById("as4").style.color="white";
+                document.getElementById("as3").style.color="white";
+                document.getElementById("label").style.color="white";
+                document.getElementById("course").style.color="white"; 
+                document.getElementById("first_row").style.backgroundColor="white";                
+                document.getElementById("card1").style["boxShadow"] = "0 5px 10px white";
+                document.getElementById("card2").style["boxShadow"] = "0 5px 10px white";
+                document.getElementById("card3").style["boxShadow"] = "0 5px 10px white";
+                document.getElementById("card4").style["boxShadow"] = "0 5px 10px white";
+                localStorage.setItem("mode","1");
+            }
+            else{
+
+              document.getElementById("font1").style.color="black";
+              document.getElementById("font2").style.color="black";
+              document.getElementById("font3").style.color="black";
+              document.getElementById("font4").style.color="black";
+              document.getElementById("as1").style.color="black";
+              document.getElementById("as2").style.color="black";
+              document.getElementById("as3").style.color="black";
+              document.getElementById("as4").style.color="black";
+              document.getElementById("label").style.color="black";
+              document.getElementById("course").style.color="black"; 
+              document.getElementById("first_row").style.backgroundColor="black";   
+              document.body.style.backgroundImage='url("logo5.jpg")';                          
+              document.getElementById("card1").style["boxShadow"] = "0 5px 10px black"
+              document.getElementById("card2").style["boxShadow"] = "0 5px 10px black"
+              document.getElementById("card3").style["boxShadow"] = "0 5px 10px black"
+              document.getElementById("card4").style["boxShadow"] = "0 5px 10px black"
+              localStorage.setItem("mode","0");
+            }
+          
+            
+        }
+  </script>
+
+ 
+
+
+</head>
+
+<body>
+
+
+<!--navbar-->
+<div class=" content">
+    <div class="container-fluid make2" id="make2">
+    
+<div class="make ">
+<nav class="navbar navbar-expand-lg   navbar-dark ">
+  <a class="navbar-brand nav-head" href="#" ><h1 id="label">Learn2code.com</h1></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end make2" id="collapsibleNavbar">
+    <ul class="navbar-nav nav-pills info" >
+      <li class="nav-item about ">
+        <a class="nav-link active" id="as1" href="#"><i class="fas fa-home"></i>HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="as2" href="#"><i class="far fa-address-card"></i>ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="as3" href="#"><i class="fas fa-phone-alt"></i>CONTACT</a>
+      </li> 
+      <li class="nav-item">
+          <a class="nav-link" id="as4" href="#"><i class="fas fa-sign-out-alt"></i>LOGOUT</a>
+        </li>  
+      
+        <li class="nav-item "style="width:49px;"><label class="switch">
+            <input id="checktog" type="checkbox" onclick="comp()">
+            <span class="slider round"></span>
+        </label>
+          
+        </li>
+    </ul>
+  </div>  
+</nav>
+</div>
+
+
+           
+
+</div>
+</div>
+
+
+<!--courses-->
+<div class="container-fluid make3">
+    <div class="row first_row" id="first_row" style="height:1px;">
+
+      </div>
+  <div class="course d-flex flex-column">
+      <div class="row pt-3 pb-3">
+    <div class="col-lg-12   col-sm-12  ">
+      <h2 id="course">OUR COURSES</h2>
+    </div>
+</div>
+  </div>
+  
+  
+
+  <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-center p-2 mt-4">
+          
+          <div class="middle card" id="card1">
+                <div class="front" >
+                  <div class="pt-2 idli" style="font-size:2em;
+                  background:none;
+                   @media only screen and (max-width:1290px){
+                    font-size:1em;
+                    padding-bottom:50px;
+
+                    }
+                    ">
+                      <i class="fab fa-python fa-9x" id="font1"></i>
+                  </div>
+                  <div>
+                      <h4 class="mt-5 pt-2" style="font-family: 'Arial Narrow Bold', sans-serif">Python</h4>
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="back-content middle">
+                      <h2 style="font-family: 'Arial Narrow Bold', sans-serif">Python
+                        </h2>
+                        <span class="p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                        <div >
+<button class="btn btn-info bg-primary mt-3" onclick="window.location.href='lecture_python.html'">Start Learning</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            
+              </div>
+    
+
+       
+              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12  d-flex flex-column justify-content-center p-2 mt-4">
+                  <div class="middle card " id="card2">
+                      <div class="front ">
+                          <div class="pt-2" style="font-size:2em; @media only screen and (max-width:1290px){
+                            font-size:1em;
+                            padding-bottom:50px;
+                            }
+                            ">
+                              <i class="fab fa-java fa-9x" id="font2"></i>
+                          </div>
+                          <div>
+                              <h4 class="mt-5 pt-5" style="font-family: 'Arial Narrow Bold', sans-serif">Java</h4>
+                          </div>
+                        </div>
+                        <div class="back">
+                          <div class="back-content middle">
+                              <h2  style="font-family: 'Arial Narrow Bold', sans-serif">Java
+                                </h2>
+                                <span class="p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                <div >
+        <button class="btn btn-info bg-primary m-3" onclick="window.location.href='java_lecture.html'">Start Learning</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+
+
+
+
+                      <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-center p-2 mt-4">
+                          <div class="middle card" id="card3">
+                              <div class="front ">
+                                  <div class="mt-3 pt-2" style="font-size:2em; @media only screen and (max-width:1290px){
+                                    font-size:1em;
+                                    padding-bottom:50px;
+                
+                                    }
+                                    ">
+                                      <i class="fab fa-html5 fa-9x" id="font3"></i>
+                                  </div>
+                                  <div>
+                                      <h4 class="mt-2 p-4" style="font-family: 'Arial Narrow Bold', sans-serif">HTML</h4>
+                
+                                  </div>
+                                </div>
+                                <div class="back">
+                                  <div class="back-content middle">
+                                      <h2 style="font-family: 'Arial Narrow Bold', sans-serif">HTML
+                                        </h2>
+                                        <span class="p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                        <div >
+                <button class="btn btn-info bg-primary m-3" onclick="window.location.href='html_lecture.html'">Start Learning</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+            
+
+                              <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 d-flex flex-column justify-content-center p-2 mt-4">
+                                  <div class="middle card " id="card4">
+                                      <div class="front ">
+                                          <div class="mt-5 pt-4" style="font-size:2em; @media only screen and (max-width:1290px){
+                                            font-size:1.5em;
+                                            
+                                            }
+                                            ">
+                                              <i class="fas fa-gem fa-6x" id="font4"></i>
+                                          </div>
+                                          <div>
+                                              <h4 class="mt-5 pt-5" style="font-family: 'Arial Narrow Bold', sans-serif">Ruby</h4>
+                        
+                                          </div>
+                                        </div>
+                                        <div class="back">
+                                          <div class="back-content middle">
+                                            <h2 style="font-family: 'Arial Narrow Bold', sans-serif">Ruby
+                                            </h2>
+                                            <span class="p-2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</span>
+                                            <div >
+                    <button class="btn btn-info bg-primary m-3" onclick="window.location.href='ruby_lecture.html'">Start Learning</button>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      </div>
+      
+
+
+
+</div>
+</div>
+
+
+</body>
+</html>

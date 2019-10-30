@@ -1,0 +1,196 @@
+/*navbar*/
+.make{
+  margin-bottom:5px;
+}
+i{
+  margin-right:10px;
+}
+.first_row{
+  background-color: black;
+}
+
+.nav-head h1{
+  color:black;
+}
+li{
+  text-align:center;
+  margin-left:5px;
+  margin-right:5px;
+  width:130px;
+  height:40px;
+  }
+  .info a:hover{
+    background-color:black;
+   }@media only screen and (max-width:991px){
+    li{
+      text-align:center;
+      margin-left:5px;
+      margin-right:5px;
+      width:100%;
+      height:40px;
+      }
+
+   }
+  
+
+
+
+  /*login form*/
+.welcome{
+  width:100%;
+  padding:20px;
+  color:black;
+}
+
+body.night .welcome{
+  color:white;
+}
+
+.login{
+  padding:10px;
+  color:black;
+}
+body.night .login{
+  color:white;
+}
+.username,.password{
+  margin-top:20px;
+  margin-bottom:20px
+}
+input{
+  width:300px;
+  border-radius:5px;
+  background: none;
+  border:2px solid black;
+  outline:none;
+  text-align:center;
+  height:40px;
+  color:black;
+}
+body.night input{
+  border:2px solid white;
+
+  color:white
+}
+
+input:hover,input:focus{
+  border:2px solid white;
+}
+body.night input:hover,body.night input:hover{
+  border:2px solid black;
+}
+input::placeholder{
+  color:black
+}
+body.night input::placeholder{
+  color:whitesmoke;
+}
+
+.btn-login{
+  width:200px;
+  border-radius:5px;
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.btn-login:hover{
+  width:300px;
+}
+.signup-button{
+  width:350px;
+  height:100px;
+  margin-top:20px;
+}
+
+.btn-signup{
+  height: 40px;
+  width: 200px;
+  outline:0;
+  margin-top: 30px;
+}
+.btn-signup a{
+  text-decoration: none;
+  color:white;
+}
+
+.forgot a{
+  color:black;
+}
+
+body.night .forgot a{
+  color:white;
+}
+
+
+.ch{
+  height:572px;
+  border-color: white;
+}
+#form_login{
+  border-color: white;
+
+}
+/*.login_back{
+  background-image: url("log6.jpg");
+  background-repeat: space;
+  background-size: 100% 100%;
+}*/
+
+/*toggler*/
+body{
+  background-image: url("logo5.jpg");
+  background-size:100% 200%;
+}
+body.night
+{
+  background-image:url("log6.jpg");
+  background-size:100% 200%;
+
+}
+.toggle
+{position: relative;
+  background: none;
+  border: 2px solid black;
+  width: 49px;
+  height: 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.toggle.active
+{
+  background:none;
+  border: 2px solid white;
+}
+.toggle:before
+{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background:black;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.toggle.active:before
+{
+  left: 27px;
+  background: white;
+}
+
+/*dark*/
+body.night .first_row{
+  background-color: white;
+}
+
+body.night .info a:hover{
+  background-color:gray;
+}
+
+body.night .nav-head h1
+{
+  color:whitesmoke;
+
+}

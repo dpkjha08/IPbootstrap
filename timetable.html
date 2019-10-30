@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+  text-align: center;
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+  text-align: center;
+}
+@media 
+only screen and (max-width: 760px)
+  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { 
+        border: 1px solid #ccc;
+
+     }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid darkgray; 
+		position: relative;
+		padding-left: 50%; 
+  text-align: left; 
+
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+
+	*/
+	td:nth-of-type(1):before { content: "DAY"; }
+	td:nth-of-type(2):before { content: "8:30 to 9:30"; }
+	td:nth-of-type(3):before { content: "9:30 to 10:30"; }
+	td:nth-of-type(4):before { content: "10:30 to 11:30"; }
+	td:nth-of-type(5):before { content: "11:30 to 12:30"; }
+	td:nth-of-type(6):before { content: "12:30 to 1:30"; }
+	td:nth-of-type(7):before { content: "1:30 to 2:30"; }
+	td:nth-of-type(8):before { content: "2:30 to 3:30"; }
+	td:nth-of-type(9):before { content: "3:30 to 4:30"; }
+	
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2 style="text-align:center;">T.E. Section:B Time Table</h2>
+  <table STYLE="text-align: center">
+        <thead>
+        <tr>
+            <th>Day</th>
+            <th>8:30 to 9:30</th>
+            <th>9:30 to 10:30</th>
+            <th>10:30 to 11:30</th>
+            <th>11:30 to 12:30</th>
+            <th>12:30 to 1:30</th>
+            <th>1:30 to 2:30</th>
+            <th>2:30 to 3:30</th>
+            <th>3:30 to 4:30</th>
+
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>MONDAY</td>
+            <td>MEP</td>
+            <td>BCE</td>
+            <td>BCE</td>
+            <td>BREAK</td>
+            <td>LAB 1ST HALF</td>
+            <td>LAB 2nd HALF</td>
+            <td>ADSAOA</td>
+            <td>ADMT</td>
+
+            
+        </tr>
+        <tr>
+                <td>TUESDAY</td>
+                <td>ADMT</td>
+                <td>IP</td>
+                <td>MEP</td>
+                <td>BREAK</td>
+                <td>LAB 1ST HALF</td>
+                <td>LAB 2nd HALF</td>
+                <td>BCE</td>
+                <td>BCE</td>    
+        </tr>
+        <tr>
+                <td>WEDNESDAY</td>
+                <td>CNS</td>
+                <td>CNS</td>
+                <td>ADMT</td>
+                <td>BREAK</td>
+                <td>LAB 1ST HALF</td>
+                <td>LAB 2ND HALF</td>                
+                <td>IP</td>
+                <td>ADSAOA</td>    
+        </tr>
+        <tr>
+                <td>THURSDAY</td>
+                <td>IP</td>
+                <td>ADMT</td>
+                <td>MEP</td>
+                <td>BREAK</td>
+                <td>LAB 1ST HALF</td>
+                <td>LAB 2nd HALF</td>
+                <td>CNS</td>
+                <td>Remedial</td>    
+        </tr>
+        <tr>
+                <td>SATURDAY</td>
+                <td>ADSAOA</td>
+                <td>ADSAOA</td>
+                <td>MEP</td>
+                <td>BREAK</td>
+                <td>CNS</td>
+                <td>IP</td>
+                <td>----</td>
+                <td>Faculty Meeting</td>    
+        </tr>
+        </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

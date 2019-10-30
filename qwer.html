@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            qwer
+        </title>
+        <style>
+        body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+body.night
+{
+    background: #00151f;
+}
+.toggle
+{
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.toggle.active
+{
+    background: #00151f;
+    border: 2px solid #fff;
+}
+.toggle:before
+{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.toggle.active:before
+{
+    left: 27px;
+    background: #fff;
+}
+.content
+{
+    margin: 100px auto;
+    width: 1000px;
+}
+.content h1
+{
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000;
+    transition: 0.5s;
+}
+.content p
+{
+    margin: 0;
+    padding: 0;
+    color: #000;
+    transition: 0.5s;
+    font-size: 18px;
+}
+body.night .content h1,
+body.night .content p
+{
+    color: #fff;
+}
+        </style>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.toggle').click(function(){
+            $('.toggle').toggleClass('active')
+            $('body').toggleClass('night')
+        })
+    })
+</script>
+    </head>
+    <body>
+            <div class="toggle"></div>
+            <div class="content">
+                <h1>What is Lorem Ipsum?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p><br><br>
+                <h1>Why do we use it?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+                It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+            </div>
+    </body>
+</html>
